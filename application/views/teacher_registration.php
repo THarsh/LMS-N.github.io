@@ -18,56 +18,153 @@
                                         <tbody>
                                         <tr>
                                             <th scope="row">1</th>
-                                            <td></td>
+                                            <td><label>Enter Your Name</label> <span class="erros">* </span></td>
+                                            <td> <input type="text" name="username" class="form-control"
+                                                        placeholder="Enter Your Name"> <?php echo form_error('name'); ?>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td><label>Enter Your NIC </label>  <span class="erros">* </span></td>
+                                            <td>
+                                                <input type="text" name="nic" class="form-control"
+                                                       placeholder="Enter Your NIC"> <?php echo form_error('nic'); ?>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td><label>Your Mobile  Ex-07x xxx xxxx </label><span class="erros">* </span></td>
+                                            <td>
+                                                <input type="text" name="mob1" class="form-control"
+                                                       placeholder="Your Mobile  Ex-07x xxx xxxx"> <?php echo form_error('mob1'); ?>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td><label>Your Land  Ex-0xx xxx xxxx  </label><span class="erros">* </span></td>
+                                            <td>
+                                                <input type="text" name="mob2" class="form-control"
+                                                       placeholder="Your Land  Ex-0xx xxx xxxx"> <?php echo form_error('mob2'); ?>
+                                            </td>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td><label>Enter Permanent Address</label><span class="erros">* </span></td>
+                                            <td>
+                                                <input type="text" name="permadd" class="form-control"
+                                                         placeholder="Enter Permanent Address"> <?php echo form_error('permadd'); ?>
+
+                                            </td>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">6</th>
+                                            <td><label>Enter Postal Address</label><span class="erros">* </span></td>
+                                            <td>
+                                                <input type="text" name="postadd" class="form-control"
+                                                       placeholder="Enter Postal Address"> <?php echo form_error('postadd'); ?>
+
+                                            </td>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">7</th>
+                                            <td><label>Date of Birth</label><span class="erros">* </span></td>
+                                            <td>
+                                                <input type="date" name="dob" data-language="en"
+                                                       class="datepicker-here form-control">
+                                                <!-- <input type="date" name="dob" class="form-control" placeholder="Enter You Date of birth">  -->
+                                                <?php echo form_error('dob'); ?>
+                                            </td>
+
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">8</th>
+                                            <td><label>Upload Your Photo</label><span class="erros">* </span></td>
+                                            <td>
+                                                <input type="file" name="photo" class="form-control"
+                                                       placeholder="Upload Your photo"
+                                                       accept="image/*"><?php echo form_error('photo'); ?>
+                                            </td>
+
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">9</th>
+                                            <td><label>Gender</label><span class="erros">* </span></td>
+                                            <td>
+                                                <select name="gender" class="form-control"
+                                                        placeholder="Select You gender">
+                                                    <option value="M">Male</option>
+                                                    <option value="F">Female</option>
+                                                </select>
+                                            </td>
+
+                                            </td>
                                         </tr>
                                         </tbody>
                                     </table>
+                                    <center>
+                                        <button class="btn-n btn-s" type="submit">Proceed</button>
+                                    </center>
                                 </div>
 
 
-                                            <div class="col-md-12">
+                                            <!--<div class="col-md-12">
 
                                                 <div id="errors-div" class="erros"></div>
 
                                                 <span class="erros">* </span>
                                                 <input type="text" name="username" class="form-control"
-                                                       placeholder="Enter Your Name"> <?php echo form_error('name'); ?>
+                                                       placeholder="Enter Your Name"> <?php /*echo form_error('name'); */?>
                                                 <br>
 
                                                 <span class="erros">* </span>
                                                 <input type="text" name="nic" class="form-control"
-                                                       placeholder="Enter Your NIC"> <?php echo form_error('nic'); ?>
+                                                       placeholder="Enter Your NIC"> <?php /*echo form_error('nic'); */?>
                                                 <br>
 
                                                 <span class="erros">* </span>
                                                 <input type="text" name="mob1" class="form-control"
-                                                       placeholder="Your Mobile  Ex-07x xxx xxxx"> <?php echo form_error('mob1'); ?>
+                                                       placeholder="Your Mobile  Ex-07x xxx xxxx"> <?php /*echo form_error('mob1'); */?>
                                                 <br>
 
                                                 <input type="text" name="mob2" class="form-control"
-                                                       placeholder="Your Land  Ex-0xx xxx xxxx"> <?php echo form_error('mob2'); ?>
+                                                       placeholder="Your Land  Ex-0xx xxx xxxx"> <?php /*echo form_error('mob2'); */?>
                                                 <br>
 
                                                 <span class="erros">* </span>
                                                 <input type="text" name="permadd" class="form-control"
-                                                       placeholder="Enter Permanent Address"> <?php echo form_error('permadd'); ?>
+                                                       placeholder="Enter Permanent Address"> <?php /*echo form_error('permadd'); */?>
                                                 <br>
 
                                                 <span class="erros">* </span>
                                                 <input type="text" name="postadd" class="form-control"
-                                                       placeholder="Enter Postal Address"> <?php echo form_error('postadd'); ?>
+                                                       placeholder="Enter Postal Address"> <?php /*echo form_error('postadd'); */?>
                                                 <br>
 
                                                 <span class="erros">* </span>
                                                 <input type="date" name="dob" data-language="en"
                                                        class="datepicker-here form-control">
-                                                <!-- <input type="date" name="dob" class="form-control" placeholder="Enter You Date of birth">  -->
-                                                <?php echo form_error('dob'); ?>
+
+                                                <?php /*echo form_error('dob'); */?>
                                                 <br>
 
                                                 <input type="file" name="photo" class="form-control"
                                                        placeholder="Upload Your photo"
-                                                       accept="image/*"><?php echo form_error('photo'); ?>
+                                                       accept="image/*"><?php /*echo form_error('photo'); */?>
                                                 <br>
 
                                                 <span class="erros">* </span>
@@ -77,12 +174,12 @@
                                                     <option value="F">Female</option>
                                                 </select>
                                                 <br>
-                                                <!-- <input type="submit" class="btn btn-success" value="Submit">-->
+
 
                                                 <center>
                                                     <button class="btn-n btn-s" type="submit">Proceed</button>
                                                 </center>
-                                            </div>
+                                            </div>-->
                                             </form>
                                         </div>
 

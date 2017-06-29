@@ -16,10 +16,6 @@
 
                         <div class="form-group"><label>Password</label> <input placeholder="Password" class="form-control" type="password"></div>
                     </div>
-
-
-
-
                     <div class="form-group">
                         <div class="col-md-12">
                             <div>
