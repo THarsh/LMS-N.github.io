@@ -13,6 +13,17 @@
                             <div class="row">
                                             <?php echo form_open_multipart('profile/profile_details', 'id="teacher-reg-form"'); ?>
 
+                                <div class="col-md-12">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
 
                                             <div class="col-md-12">
 

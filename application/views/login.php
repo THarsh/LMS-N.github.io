@@ -1,4 +1,4 @@
-  <?php include(FCPATH . "assets/includes/nav.php"); ?>
+ <?php include(FCPATH . "assets/includes/nav.php"); ?>
 
 <div class="container">
 <div class="row" style="padding-top:10px;">
